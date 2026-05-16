@@ -34,19 +34,6 @@ const ACADEMIAS_DB = [
 ];
 
 function getRecommendation(asignatura, grado) {
-  const asig = (asignatura || '').toLowerCase();
-  const grad = (grado || '').toLowerCase();
-  
-  for (const aca of ACADEMIAS_DB) {
-    if (aca.keywords.some(kw => asig.includes(kw.toLowerCase()))) {
-      return { name: aca.name, phone: aca.phone };
-    }
-  }
-
-  if (grad.includes('informática') || grad.includes('software')) return { name: 'TechStudy UMA', phone: '34698765432' };
-  if (grad.includes('mecánica') || grad.includes('industrial') || grad.includes('energía')) return { name: 'Academia Ingeniería Málaga', phone: '34612345678' };
-  if (grad.includes('telecomunicación') || grad.includes('eléctrica') || grad.includes('electrónica')) return { name: 'Academia Politécnica Sur', phone: '34655443322' };
-
   return { name: 'Academias Unitec', phone: '34952345678' };
 }
 
