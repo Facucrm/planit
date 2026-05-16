@@ -316,18 +316,30 @@ export default function Calendar() {
                     
                     {recommendation && (
                       <div className="academy-recommendation">
-                        <div className="rec-info">
+                        <div className="rec-info" style={{ marginBottom: '8px' }}>
                           <span>Intensivo recomendado en:</span>
                           <strong>{recommendation.name}</strong>
                         </div>
-                        <a 
-                          href={`https://wa.me/${recommendation.phone}?text=Hola! He visto en Planit que impartís intensivos de ${ex.asignatura}. Me gustaría recibir más información.`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn btn-primary btn-sm"
-                        >
-                          <MessageCircle size={14} /> WhatsApp
-                        </a>
+                        <div style={{ display: 'flex', gap: '8px' }}>
+                          <a 
+                            href="https://www.academiasunitec.com/estudios-universitarios/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-outline btn-sm"
+                            style={{ flex: 1, justifyContent: 'center' }}
+                          >
+                            <ExternalLink size={14} /> Sitio Web
+                          </a>
+                          <a 
+                            href={`https://wa.me/${recommendation.phone}?text=Hola! He visto en Planit que impartís intensivos de ${ex.asignatura}. Me gustaría recibir más información.`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary btn-sm"
+                            style={{ flex: 1, justifyContent: 'center' }}
+                          >
+                            <MessageCircle size={14} /> WhatsApp
+                          </a>
+                        </div>
                       </div>
                     )}
                   </div>
