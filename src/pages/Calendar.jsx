@@ -26,18 +26,29 @@ function formatShortDate(d) {
   return `${d.getDate()} ${MONTH_NAMES[d.getMonth()].substring(0, 3)}`;
 }
 
-const ACADEMIA_MAP = {
-  'Química': { name: 'Academias Unitec', phone: '34952345678' },
-  'Física I': { name: 'Academias Unitec', phone: '34952345678' },
-  'Física II': { name: 'Academias Unitec', phone: '34952345678' },
-  'Cálculo I': { name: 'Academias Unitec', phone: '34952345678' },
-  'Cálculo II': { name: 'Academias Unitec', phone: '34952345678' },
-  'Álgebra Lineal': { name: 'Academias Unitec', phone: '34952345678' },
-  'Estadística': { name: 'Academias Unitec', phone: '34952345678' },
-  'Informática': { name: 'Academias Unitec', phone: '34952345678' },
-  'Expresión Gráfica': { name: 'Academias Unitec', phone: '34952345678' },
-  'Fundamentos de Empresa': { name: 'Academias Unitec', phone: '34952345678' },
-};
+const ACADEMIAS_DB = [
+  { name: 'Academias Unitec', phone: '34952345678', keywords: ['Física', 'Cálculo', 'Matemáticas', 'Química', 'Álgebra', 'Materiales', 'Termodinámica', 'Contabilidad', 'Economía', 'Empresa', 'Marketing'] },
+  { name: 'Academia Ingeniería Málaga', phone: '34612345678', keywords: ['Mecánica', 'Resistencia', 'Máquinas', 'Fluidos', 'Estructuras', 'Fabricación', 'Industrial', 'Procesos', 'Motores'] },
+  { name: 'TechStudy UMA', phone: '34698765432', keywords: ['Informática', 'Programación', 'Estadística', 'Expresión Gráfica', 'Dibujo', 'Software', 'Computadores', 'Datos', 'Sistemas', 'Diseño'] },
+  { name: 'Academia Politécnica Sur', phone: '34655443322', keywords: ['Electrónica', 'Eléctrica', 'Telecomunicación', 'Señales', 'Circuitos', 'Redes', 'Automática', 'Robots', 'Instalaciones'] }
+];
+
+function getRecommendation(asignatura, grado) {
+  const asig = (asignatura || '').toLowerCase();
+  const grad = (grado || '').toLowerCase();
+  
+  for (const aca of ACADEMIAS_DB) {
+    if (aca.keywords.some(kw => asig.includes(kw.toLowerCase()))) {
+      return { name: aca.name, phone: aca.phone };
+    }
+  }
+
+  if (grad.includes('informática') || grad.includes('software')) return { name: 'TechStudy UMA', phone: '34698765432' };
+  if (grad.includes('mecánica') || grad.includes('industrial') || grad.includes('energía')) return { name: 'Academia Ingeniería Málaga', phone: '34612345678' };
+  if (grad.includes('telecomunicación') || grad.includes('eléctrica') || grad.includes('electrónica')) return { name: 'Academia Politécnica Sur', phone: '34655443322' };
+
+  return { name: 'Academias Unitec', phone: '34952345678' };
+}
 
 export default function Calendar() {
   const { exams, profile, addExam, removeExam } = useAuth();
@@ -288,7 +299,7 @@ export default function Calendar() {
             </div>
             <div className="modal-body">
               {(examMap[formatDateKey(selectedDay)] || []).map(ex => {
-                const recommendation = ACADEMIA_MAP[ex.asignatura];
+                const recommendation = getRecommendation(ex.asignatura, ex.grado || profile?.grado);
                 return (
                   <div key={ex.id} className="exam-detail-card">
                     <div className="exam-main">
