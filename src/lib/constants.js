@@ -1,0 +1,85 @@
+export const UMA_STRUCTURE = {
+  'Escuela de Ingenierías Industriales': [
+    'Grado en Ingeniería en Tecnologías Industriales',
+    'Grado en Ingeniería Mecánica',
+    'Grado en Ingeniería Eléctrica',
+    'Grado en Ingeniería Electrónica Industrial',
+    'Grado en Ingeniería de Organización Industrial',
+    'Grado en Ingeniería de la Energía',
+    'Grado en Ingeniería en Diseño Industrial y Desarrollo del Producto',
+    'Doble Grado en Ingeniería Eléctrica e Ingeniería Mecánica',
+  ],
+  'E.T.S. de Ingeniería Informática': [
+    'Grado en Ingeniería Informática',
+    'Grado en Ingeniería del Software',
+    'Grado en Ingeniería de Computadores',
+    'Grado en Ingeniería de la Salud',
+    'Doble Grado en Ingeniería Informática y Matemáticas',
+  ],
+  'E.T.S. de Ingeniería de Telecomunicación': [
+    'Grado en Ingeniería de Tecnologías de Telecomunicación',
+    'Grado en Ingeniería de Sistemas de Telecomunicación',
+    'Grado en Ingeniería de Sistemas Electrónicos',
+    'Grado en Ingeniería de Sonido e Imagen',
+    'Grado en Ingeniería Telemática',
+  ],
+  'Facultad de Marketing y Gestión': [
+    'Grado en Marketing e Investigación de Mercados',
+    'Grado en Gestión y Administración Pública',
+    'Grado en Inteligencia y Analítica de Mercados',
+  ],
+  'Facultad de Ciencias Económicas y Empresariales': [
+    'Grado en Administración y Dirección de Empresas',
+    'Grado en Economía',
+    'Grado en Finanzas y Contabilidad',
+    'Doble Grado en ADE y Derecho',
+    'Doble Grado en Economía y ADE',
+  ],
+  'Facultad de Ciencias': [
+    'Grado en Biología',
+    'Grado en Bioquímica',
+    'Grado en Ciencias Ambientales',
+    'Grado en Matemáticas',
+    'Grado en Química',
+  ],
+  'Facultad de Medicina': [
+    'Grado en Medicina',
+  ],
+  'Facultad de Psicología y Logopedia': [
+    'Grado en Psicología',
+    'Grado en Logopedia',
+    'Doble Grado en Psicología y Logopedia',
+  ],
+  'Facultad de Derecho': [
+    'Grado en Derecho',
+    'Grado en Criminología',
+    'Doble Grado en Derecho y Criminología',
+  ],
+  'Facultad de Filosofía y Letras': [
+    'Grado en Historia',
+    'Grado en Historia del Arte',
+    'Grado en Filosofía',
+    'Grado en Filología Hispánica',
+    'Grado en Estudios Ingleses',
+    'Grado en Traducción e Interpretación',
+    'Grado en Geografía y Gestión del Territorio',
+  ],
+  'Facultad de Ciencias de la Comunicación': [
+    'Grado en Periodismo',
+    'Grado en Comunicación Audiovisual',
+    'Grado en Publicidad y Relaciones Públicas',
+  ],
+  'Facultad de Ciencias de la Educación': [
+    'Grado en Educación Infantil',
+    'Grado en Educación Primaria',
+    'Grado en Educación Social',
+    'Grado en Pedagogía',
+  ],
+  'Facultad de Turismo': [
+    'Grado en Turismo',
+    'Grado en Ciencias Gastronómicas y Gestión Hotelera',
+  ],
+  'E.T.S. de Arquitectura': [
+    'Grado en Fundamentos de Arquitectura',
+  ],
+};

@@ -1,0 +1,912 @@
+Warning: Setting up fake worker.
+Warning: TT: undefined function: 21
+{
+  "GIEI-1": [
+    {
+      "asignatura": "AMPLIACIÓN DE CÁLCULO",
+      "date1": "12-jun.",
+      "time1": "9:30",
+      "date2": "6-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "ANÁLISIS VECTORIAL Y ESTADÍSTICO",
+      "date1": "16-jun.",
+      "time1": "9:30",
+      "date2": "8-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "FÍSICA 2",
+      "date1": "18-jun.",
+      "time1": "9:30",
+      "date2": "10-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "EXPRESIÓN GRÁFICA EN LA INGENIERÍA",
+      "date1": "8-jun.",
+      "time1": "9:30",
+      "date2": "30-jun.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "FUNDAMENTOS DE INFORMÁTICA",
+      "date1": "10-jun.",
+      "time1": "9:30",
+      "date2": "2-jul.",
+      "time2": "16:00"
+    }
+  ],
+  "GIEI-2": [
+    {
+      "asignatura": "TERMOTECNIA",
+      "date1": "15-jun.",
+      "time1": "9:30",
+      "date2": "7-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "AUTOMÁTICA",
+      "date1": "17-jun.",
+      "time1": "9:30",
+      "date2": "9-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "CIENCIA DE LOS MATERIALES",
+      "date1": "19-jun.",
+      "time1": "9:30",
+      "date2": "13-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "FUNDAMENTOS DE ELECTRÓNICA",
+      "date1": "9-jun.",
+      "time1": "9:30",
+      "date2": "1-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "FUNDAMENTOS DE INGENIERÍA ELÉCTRICA",
+      "date1": "11-jun.",
+      "time1": "9:30",
+      "date2": "3-jul.",
+      "time2": "16:00"
+    }
+  ],
+  "GIEI-3": [
+    {
+      "asignatura": "SISTEMAS ELECTRÓNICOS DIGITALES",
+      "date1": "12-jun.",
+      "time1": "16:00",
+      "date2": "6-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "INGENIERÍA GRÁFICA EN ELECTRÓNICA",
+      "date1": "16-jun.",
+      "time1": "16:00",
+      "date2": "8-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "INGLÉS APLICADO A LA INGENIERÍA ELECTRÓNICA",
+      "date1": "18-jun.",
+      "time1": "16:00",
+      "date2": "10-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "MANTENIMIENTO INDUSTRIAL",
+      "date1": "18-jun.",
+      "time1": "16:00",
+      "date2": "10-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "CIRCUITOS INTEGRADOS",
+      "date1": "8-jun.",
+      "time1": "16:00",
+      "date2": "30-jun.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "AUTOMATIZACIÓN INDUSTRIAL",
+      "date1": "10-jun.",
+      "time1": "16:00",
+      "date2": "2-jul.",
+      "time2": "9:30"
+    }
+  ],
+  "GIEI-4": [
+    {
+      "asignatura": "DISEÑO DE CONTROLADORES INDUSTRIALES",
+      "date1": "15-jun.",
+      "time1": "16:00",
+      "date2": "7-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "SEGURIDAD Y SALUD LABORAL",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "EQUIPOS ELECTRÓNICOS DE MEDIDA",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "MICROELECTRÓNICA",
+      "date1": "8-jun.",
+      "time1": "16:00",
+      "date2": "30-jun.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "TECNOLOGÍA ELECTRÓNICA",
+      "date1": "10-jun.",
+      "time1": "16:00",
+      "date2": "2-jul.",
+      "time2": "9:30"
+    }
+  ],
+  "GIEL-1": [
+    {
+      "asignatura": "AMPLIACIÓN DE CÁLCULO",
+      "date1": "12-jun.",
+      "time1": "9:30",
+      "date2": "6-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "ANÁLISIS VECTORIAL Y ESTADÍSTICO",
+      "date1": "16-jun.",
+      "time1": "9:30",
+      "date2": "8-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "FÍSICA 2",
+      "date1": "18-jun.",
+      "time1": "9:30",
+      "date2": "10-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "QUÍMICA",
+      "date1": "8-jun.",
+      "time1": "9:30",
+      "date2": "30-jun.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "GESTIÓN DE EMPRESAS",
+      "date1": "10-jun.",
+      "time1": "9:30",
+      "date2": "2-jul.",
+      "time2": "16:00"
+    }
+  ],
+  "GIEL-2": [
+    {
+      "asignatura": "TERMOTECNIA",
+      "date1": "15-jun.",
+      "time1": "9:30",
+      "date2": "7-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "CIENCIAS DE LOS MATERIALES",
+      "date1": "17-jun.",
+      "time1": "9:30",
+      "date2": "9-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "AUTOMÁTICA",
+      "date1": "19-jun.",
+      "time1": "9:30",
+      "date2": "13-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "FUNDAMENTOS DE ELECTRÓNICA",
+      "date1": "9-jun.",
+      "time1": "9:30",
+      "date2": "1-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "FUNDAMENTOS DE INGENIERÍA ELÉCTRICA",
+      "date1": "11-jun.",
+      "time1": "9:30",
+      "date2": "3-jul.",
+      "time2": "16:00"
+    }
+  ],
+  "GIEL-3": [
+    {
+      "asignatura": "INGENIERÍA GRÁFICA ELÉCTRICA Y TOPOGRAFÍA",
+      "date1": "12-jun.",
+      "time1": "16:00",
+      "date2": "6-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "MÁQUINAS ELÉCTRICAS 2",
+      "date1": "16-jun.",
+      "time1": "16:00",
+      "date2": "8-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "ADMINISTRACIÓN DE OPERACIONES",
+      "date1": "18-jun.",
+      "time1": "16:00",
+      "date2": "10-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "MANTENIMIENTO INDUSTRIAL",
+      "date1": "18-jun.",
+      "time1": "16:00",
+      "date2": "10-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "TÉCNICAS DE ILUMINACIÓN Y DOMÓTICA",
+      "date1": "18-jun.",
+      "time1": "16:00",
+      "date2": "10-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "INSTALACIONES ELÉCTRICAS DE BAJA TENSIÓN",
+      "date1": "8-jun.",
+      "time1": "16:00",
+      "date2": "30-jun.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "ANÁLISIS DE SISTEMAS DE ENERGÍA ELÉCTRICA",
+      "date1": "10-jun.",
+      "time1": "16:00",
+      "date2": "2-jul.",
+      "time2": "9:30"
+    }
+  ],
+  "GIEL-4": [
+    {
+      "asignatura": "EQUIPOS ELECTRÓNICOS DE MEDIDA",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "PROGRAMACIÓN DE ROBOTS INDUSTRIALES",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "EXPLOTACIÓN DE LOS SISTEMAS DE ENERGÍA ELÉCTRICA",
+      "date1": "19-jun.",
+      "time1": "16:00",
+      "date2": "13-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "INSTALACIONES DE ALTA TENSIÓN",
+      "date1": "9-jun.",
+      "time1": "16:00",
+      "date2": "1-jul.",
+      "time2": "9:30"
+    }
+  ],
+  "GIM-1": [
+    {
+      "asignatura": "AMPLIACIÓN DE CÁLCULO",
+      "date1": "12-jun.",
+      "time1": "9:30",
+      "date2": "6-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "ANÁLISIS VECTORIAL Y ESTADÍSTICO",
+      "date1": "16-jun.",
+      "time1": "9:30",
+      "date2": "8-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "FÍSICA II",
+      "date1": "18-jun.",
+      "time1": "9:30",
+      "date2": "10-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "EXPRESIÓN GRÁFICA EN LA INGENIERÍA",
+      "date1": "8-jun.",
+      "time1": "9:30",
+      "date2": "30-jun.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "FUNDAMENTOS DE INFORMÁTICA",
+      "date1": "10-jun.",
+      "time1": "9:30",
+      "date2": "2-jul.",
+      "time2": "16:00"
+    }
+  ],
+  "GIM-2": [
+    {
+      "asignatura": "INGENIERÍA DE FABRICACIÓN",
+      "date1": "15-jun.",
+      "time1": "9:30",
+      "date2": "7-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "AMPLIACIÓN DE FÍSICA",
+      "date1": "17-jun.",
+      "time1": "9:30",
+      "date2": "9-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "INGLÉS APLICADO A LA INGENIERÍA MECÁNICA",
+      "date1": "17-jun.",
+      "time1": "9:30",
+      "date2": "9-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "SISTEMAS INFORMÁTICOS",
+      "date1": "17-jun.",
+      "time1": "9:30",
+      "date2": "9-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "TEORÍA DE MÁQUINAS",
+      "date1": "19-jun.",
+      "time1": "9:30",
+      "date2": "13-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "RESISTENCIA DE MATERIALES",
+      "date1": "9-jun.",
+      "time1": "9:30",
+      "date2": "1-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "MECÁNICA DE FLUIDOS",
+      "date1": "11-jun.",
+      "time1": "9:30",
+      "date2": "3-jul.",
+      "time2": "16:00"
+    }
+  ],
+  "GIM-3": [
+    {
+      "asignatura": "CÁLCULO Y DISEÑO DE MÁQUINAS",
+      "date1": "12-jun.",
+      "time1": "16:00",
+      "date2": "6-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "DISEÑO MECANICO ASISTIDO POR ORDENADOR",
+      "date1": "16-jun.",
+      "time1": "16:00",
+      "date2": "8-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "ESTRUCTURAS METÁLICAS",
+      "date1": "18-jun.",
+      "time1": "16:00",
+      "date2": "10-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "TECNOLOGÍA DE MATERIALES",
+      "date1": "8-jun.",
+      "time1": "16:00",
+      "date2": "30-jun.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "MÁQUINAS FLUIDOMECÁNICAS",
+      "date1": "10-jun.",
+      "time1": "16:00",
+      "date2": "2-jul.",
+      "time2": "9:30"
+    }
+  ],
+  "GIM-4": [
+    {
+      "asignatura": "MECÁNICA EXPERIMENTAL Y TÉCNICAS DE SIMULACIÓN DE MÁQUINAS",
+      "date1": "15-jun.",
+      "time1": "16:00",
+      "date2": "7-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "ENERGÍAS RENOVABLES Y EFICIENCIA ENERGÉTICA",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "SEGURIDAD Y SALUD LABORAL",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "SOLDADURA",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "MOTORES TERMICOS",
+      "date1": "9-jun.",
+      "time1": "16:00",
+      "date2": "1-jul.",
+      "time2": "9:30"
+    }
+  ],
+  "GIOI-1": [
+    {
+      "asignatura": "MATEMÁTICAS III",
+      "date1": "15-jun.",
+      "time1": "9:30",
+      "date2": "7-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "FÍSICA II",
+      "date1": "17-jun.",
+      "time1": "9:30",
+      "date2": "9-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "EXPRESIÓN GRÁFICA",
+      "date1": "19-jun.",
+      "time1": "9:30",
+      "date2": "13-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "EMPRESA",
+      "date1": "9-jun.",
+      "time1": "9:30",
+      "date2": "1-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "ESTADÍSTICA E INVESTIGACIÓN OPERATIVA",
+      "date1": "11-jun.",
+      "time1": "9:30",
+      "date2": "3-jul.",
+      "time2": "16:00"
+    }
+  ],
+  "GIOI-2": [
+    {
+      "asignatura": "CONTROL AUTOMÁTICO Y DE PROCESOS",
+      "date1": "12-jun.",
+      "time1": "9:30",
+      "date2": "6-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "SISTEMAS DE PRODUCCIÓN",
+      "date1": "16-jun.",
+      "time1": "9:30",
+      "date2": "8-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "TECNOLOGÍA ELECTRÓNICA",
+      "date1": "18-jun.",
+      "time1": "9:30",
+      "date2": "10-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "TECNOLOGÍA QUÍMICA Y AMBIENTAL",
+      "date1": "8-jun.",
+      "time1": "9:30",
+      "date2": "30-jun.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "TECNOLOGÍA Y MÁQUINAS HIDRÁULICAS",
+      "date1": "10-jun.",
+      "time1": "9:30",
+      "date2": "2-jul.",
+      "time2": "16:00"
+    }
+  ],
+  "GIOI-3": [
+    {
+      "asignatura": "CREACIÓN DE EMPRESAS",
+      "date1": "15-jun.",
+      "time1": "16:00",
+      "date2": "7-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "DISEÑO DE PRODUCTOS E INNOVACIÓN",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "MODELADO Y SIMULACIÓN DE SISTEMAS INDUSTRIALES",
+      "date1": "18-jun.",
+      "time1": "16:00",
+      "date2": "10-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "SISTEMAS DE GESTIÓN DEL MANTENIMIENTO",
+      "date1": "19-jun.",
+      "time1": "16:00",
+      "date2": "13-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "GESTIÓN DE PROYECTOS",
+      "date1": "9-jun.",
+      "time1": "16:00",
+      "date2": "1-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "FACTOR HUMANO DE LAS ORGANIZACIONES",
+      "date1": "11-jun.",
+      "time1": "16:00",
+      "date2": "3-jul.",
+      "time2": "9:30"
+    }
+  ],
+  "GIOI-4": [
+    {
+      "asignatura": "AUTOMATIZACIÓN Y ROBÓTICA INDUSTRIAL",
+      "date1": "12-jun.",
+      "time1": "16:00",
+      "date2": "6-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "DISEÑO ASISTIDO POR ORDENADOR",
+      "date1": "16-jun.",
+      "time1": "16:00",
+      "date2": "8-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "FISCALIDAD Y GESTIÓN EMPRESARIAL",
+      "date1": "18-jun.",
+      "time1": "16:00",
+      "date2": "10-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "INFORMÁTICA INDUSTRIAL",
+      "date1": "8-jun.",
+      "time1": "16:00",
+      "date2": "30-jun.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "COMPLEJOS INDUSTRIALES",
+      "date1": "10-jun.",
+      "time1": "16:00",
+      "date2": "2-jul.",
+      "time2": "9:30"
+    }
+  ],
+  "GITI-1": [
+    {
+      "asignatura": "EXPRESIÓN GRÁFICA EN LA INGENIERÍA",
+      "date1": "12-jun.",
+      "time1": "9:30",
+      "date2": "6-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "GESTIÓN DE EMPRESAS",
+      "date1": "16-jun.",
+      "time1": "9:30",
+      "date2": "8-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "ESTADÍSTICA",
+      "date1": "18-jun.",
+      "time1": "9:30",
+      "date2": "10-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "AMPLIACIÓN DE CÁLCULO",
+      "date1": "8-jun.",
+      "time1": "9:30",
+      "date2": "30-jun.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "FÍSICA II",
+      "date1": "10-jun.",
+      "time1": "9:30",
+      "date2": "2-jul.",
+      "time2": "16:00"
+    }
+  ],
+  "GITI-2": [
+    {
+      "asignatura": "AUTOMÁTICA",
+      "date1": "15-jun.",
+      "time1": "9:30",
+      "date2": "7-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "MECÁNICA DE FLUIDOS",
+      "date1": "17-jun.",
+      "time1": "9:30",
+      "date2": "9-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "ELECTRÓNICA",
+      "date1": "19-jun.",
+      "time1": "9:30",
+      "date2": "13-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "RESISTENCIA DE MATERIALES",
+      "date1": "9-jun.",
+      "time1": "9:30",
+      "date2": "1-jul.",
+      "time2": "16:00"
+    },
+    {
+      "asignatura": "TEORÍA DE MÁQUINAS",
+      "date1": "11-jun.",
+      "time1": "9:30",
+      "date2": "3-jul.",
+      "time2": "16:00"
+    }
+  ],
+  "GITI-3": [
+    {
+      "asignatura": "FUNDAMENTOS DE COMPUTADORES",
+      "date1": "12-jun.",
+      "time1": "16:00",
+      "date2": "6-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "ELECTRÓNICA DIGITAL  ",
+      "date1": "16-jun.",
+      "time1": "16:00",
+      "date2": "8-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "INSTALACIONES DE ALTA TENSIÓN ",
+      "date1": "16-jun.",
+      "time1": "16:00",
+      "date2": "8-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "TECNOLOGÍA DE MATERIALES",
+      "date1": "16-jun.",
+      "time1": "16:00",
+      "date2": "8-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "REGULACIÓN AUTOMÁTICA",
+      "date1": "18-jun.",
+      "time1": "16:00",
+      "date2": "10-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "ALEMÁN",
+      "date1": "8-jun.",
+      "time1": "16:00",
+      "date2": "30-jun.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "INGENIERÍA GRÁFICA Y SISTEMAS DE INFORMACIÓN GEOGRÁFICA",
+      "date1": "8-jun.",
+      "time1": "16:00",
+      "date2": "30-jun.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "INGLÉS TÉCNICO",
+      "date1": "8-jun.",
+      "time1": "16:00",
+      "date2": "30-jun.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "PROYECTOS DE INSTALACIONES",
+      "date1": "8-jun.",
+      "time1": "16:00",
+      "date2": "30-jun.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "TÉCNICAS COMPUTACIONALES EN INGENIERÍA",
+      "date1": "8-jun.",
+      "time1": "16:00",
+      "date2": "30-jun.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "ORGANIZACIÓN INDUSTRIAL",
+      "date1": "10-jun.",
+      "time1": "16:00",
+      "date2": "2-jul.",
+      "time2": "9:30"
+    }
+  ],
+  "GITI-4": [
+    {
+      "asignatura": "DISEÑO DE CONTROLADORES INDUSTRIALES ",
+      "date1": "15-jun.",
+      "time1": "16:00",
+      "date2": "7-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "MATERIALES PARA INGENIERÍA MECÁNICA ",
+      "date1": "15-jun.",
+      "time1": "16:00",
+      "date2": "7-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "CONTROL DE GESTIÓN INDUSTRIAL ",
+      "date1": "15-jun.",
+      "time1": "16:00",
+      "date2": "7-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "FLUJOS NO NEWTONIANOS Y RELOGÍA ",
+      "date1": "15-jun.",
+      "time1": "16:00",
+      "date2": "7-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "MANTENIMIENTO INDUSTRIAL Y MONITORIZACIÓN ",
+      "date1": "15-jun.",
+      "time1": "16:00",
+      "date2": "7-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "MECÁNICAS DE SUELOS Y CIMENTACIONES",
+      "date1": "15-jun.",
+      "time1": "16:00",
+      "date2": "7-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "MÁQUINAS ELÉCTRICAS II ",
+      "date1": "15-jun.",
+      "time1": "16:00",
+      "date2": "7-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "TRANSDUCTORES E INTERFAZ ",
+      "date1": "15-jun.",
+      "time1": "16:00",
+      "date2": "7-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "SOLDADURA ",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "COMBUSTIÓN",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "ELECTRÓNICA PARA LA BIOMEDICINA Y LA AUTOMOCIÓN ",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "MATERIALES ESTRUCTURALES",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "METROLOGÍA DIMENSIONAL ",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "OPERACIÓN DE SISTEMAS DE ENERGÍA ELÉCTRICA ",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "PROGRAMACIÓN DE ROBOT INDUSTRIALES",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "SISTEMAS INTEGRADOS DE GESTIÓN",
+      "date1": "17-jun.",
+      "time1": "16:00",
+      "date2": "9-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "INSTALACIONES TÉRMICAS Y EFICIENCIA ENERGÉTICA ",
+      "date1": "19-jun.",
+      "time1": "16:00",
+      "date2": "13-jul.",
+      "time2": "9:30"
+    },
+    {
+      "asignatura": "PROYECTOS",
+      "date1": "9-jun.",
+      "time1": "16:00",
+      "date2": "1-jul.",
+      "time2": "9:30"
+    }
+  ]
+}

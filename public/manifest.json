@@ -1,0 +1,16 @@
+{
+  "name": "Planit UMA",
+  "short_name": "Planit",
+  "description": "Tu vida académica en un solo lugar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F0F4FA",
+  "theme_color": "#1B2A4A",
+  "icons": [
+    {
+      "src": "/planit-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
