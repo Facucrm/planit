@@ -81,18 +81,23 @@ export function AuthProvider({ children }) {
 
       // 2. Load custom exams from Supabase
       let customExams = [];
-      if (isDemo || profile?.isDemo || user?.id === 'demo-user') {
+      if (isDemo || profile?.isDemo) {
         const storedExams = localStorage.getItem('planit_demo_exams');
         if (storedExams) {
           customExams = JSON.parse(storedExams);
         }
-      } else if (user?.id) {
-        const { data } = await supabase
+      } else {
+        const { data, error } = await supabase
           .from('examenes_oficiales')
           .select('*')
           .eq('grado', grado)
           .eq('curso', curso);
-        if (data) customExams = data;
+        
+        if (error) {
+          console.error('Error fetching custom exams:', error);
+        } else if (data) {
+          customExams = data;
+        }
       }
 
       setExams([...formattedOfficial, ...customExams]);
@@ -194,7 +199,12 @@ export function AuthProvider({ children }) {
         grado: profile?.grado,
         curso: profile?.curso
       });
-      if (error) console.error('Error saving exam to Supabase:', error);
+      if (error) {
+        console.error('Error saving exam to Supabase:', error);
+        alert('Error al guardar la tarea en la base de datos: ' + (error.message || 'Error desconocido') + '. Por favor, comprueba las políticas RLS en Supabase.');
+        // Remove from local state if it failed to save to prevent false success feedback
+        setExams(prev => prev.filter(ex => ex.id !== newExam.id));
+      }
     }
   }
 
