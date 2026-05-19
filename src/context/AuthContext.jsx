@@ -121,6 +121,36 @@ export function AuthProvider({ children }) {
       options: { data: { full_name: name } },
     });
     if (error) throw error;
+    
+    // Si Supabase devuelve sesión (Confirmación de email desactivada)
+    if (data?.session?.user || data?.user) {
+      const u = data.session?.user || data.user;
+      const defaultProfile = {
+        id: u.id,
+        name: name,
+        email: email,
+        facultad: 'Escuela de Ingenierías Industriales',
+        grado: 'Grado en Ingeniería en Tecnologías Industriales',
+        curso: 1,
+        plan: 'Plan 2024'
+      };
+      
+      // Intentamos crear el perfil inicial
+      await supabase.from('profiles').upsert([defaultProfile]);
+      
+      // Si hay sesión activa (login automático), seteamos el estado para evitar redirección
+      if (data?.session) {
+        setProfile(defaultProfile);
+        localStorage.setItem('planit_profile', JSON.stringify(defaultProfile));
+        setUser(u);
+      }
+    }
+
+    // Si Supabase requiere confirmación de email, data.session será null.
+    if (!data.session) {
+      throw new Error('Supabase requiere confirmación de email. Por favor, desactiva "Confirm Email" en la configuración de Authentication de tu panel de Supabase para poder usar emails inventados.');
+    }
+
     return data;
   }
 
