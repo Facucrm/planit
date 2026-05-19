@@ -52,6 +52,13 @@ export default function Calendar() {
   const [newHora, setNewHora] = useState('09:00');
   const [newTipo, setNewTipo] = useState('Examen oficial');
 
+  // Fuerza a centrar el calendario en Junio de 2026 (mes de exámenes oficiales) al cargar la carrera
+  useEffect(() => {
+    if (profile?.grado) {
+      setCurrentDate(new Date(2026, 5, 1));
+    }
+  }, [profile?.grado]);
+
 
   const examMap = useMemo(() => {
     const map = {};
