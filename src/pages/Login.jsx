@@ -20,7 +20,11 @@ export default function Login() {
       await login(email, password);
       navigate('/app');
     } catch (err) {
-      setError(err.message || 'Error al iniciar sesión');
+      if (err.message?.includes('Invalid login credentials')) {
+        setError('Error: "Confirm Email" está activado en tu Supabase o la contraseña es incorrecta. Ve a Supabase > Authentication > Providers > Email y DESACTIVA "Confirm email" para usar cuentas de prueba.');
+      } else {
+        setError(err.message || 'Error al iniciar sesión');
+      }
     } finally {
       setLoading(false);
     }
