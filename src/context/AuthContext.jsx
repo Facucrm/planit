@@ -33,7 +33,7 @@ export function AuthProvider({ children }) {
     supabase.auth.getSession().then(({ data: { session } }) => {
       if (session?.user) {
         setUser(session.user);
-        loadProfile(session.user.id);
+        syncProfileFromUser(session.user);
       }
       setLoading(false);
     });
@@ -41,7 +41,7 @@ export function AuthProvider({ children }) {
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       if (session?.user) {
         setUser(session.user);
-        loadProfile(session.user.id);
+        syncProfileFromUser(session.user);
       } else if (!localStorage.getItem('planit_profile')) {
         setUser(null);
         setProfile(null);
@@ -52,17 +52,21 @@ export function AuthProvider({ children }) {
     return () => subscription.unsubscribe();
   }, []);
 
-  async function loadProfile(userId) {
-    try {
-      const { data } = await supabase.from('profiles').select('*').eq('id', userId).single();
-      if (data) {
-        setProfile(data);
-        localStorage.setItem('planit_profile', JSON.stringify(data));
-        loadExams(data.grado, data.curso, false);
-      }
-    } catch (e) {
-      console.error('Error loading profile:', e);
-    }
+  function syncProfileFromUser(supabaseUser) {
+    const meta = supabaseUser.user_metadata || {};
+    const p = {
+      id: supabaseUser.id,
+      name: meta.full_name || meta.name || 'Estudiante',
+      email: supabaseUser.email,
+      facultad: meta.facultad || 'Escuela de Ingenierías Industriales',
+      grado: meta.grado || 'Grado en Ingeniería en Tecnologías Industriales',
+      curso: Number(meta.curso) || 1,
+      plan: meta.plan || 'Plan 2024',
+      isDemo: false
+    };
+    setProfile(p);
+    localStorage.setItem('planit_profile', JSON.stringify(p));
+    loadExams(p.grado, p.curso, false);
   }
 
   async function loadExams(grado, curso, isDemo) {
@@ -120,30 +124,31 @@ export function AuthProvider({ children }) {
   }
 
   async function register(name, email, password) {
+    const defaultMeta = {
+      full_name: name,
+      facultad: 'Escuela de Ingenierías Industriales',
+      grado: 'Grado en Ingeniería en Tecnologías Industriales',
+      curso: 1,
+      plan: 'Plan 2024'
+    };
+
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
-      options: { data: { full_name: name } },
+      options: { data: defaultMeta },
     });
     if (error) throw error;
     
-    // Si Supabase devuelve sesión (Confirmación de email desactivada)
     if (data?.session?.user || data?.user) {
       const u = data.session?.user || data.user;
       const defaultProfile = {
         id: u.id,
         name: name,
         email: email,
-        facultad: 'Escuela de Ingenierías Industriales',
-        grado: 'Grado en Ingeniería en Tecnologías Industriales',
-        curso: 1,
-        plan: 'Plan 2024'
+        ...defaultMeta,
+        isDemo: false
       };
       
-      // Intentamos crear el perfil inicial
-      await supabase.from('profiles').upsert([defaultProfile]);
-      
-      // Si hay sesión activa (login automático), seteamos el estado para evitar redirección
       if (data?.session) {
         setProfile(defaultProfile);
         localStorage.setItem('planit_profile', JSON.stringify(defaultProfile));
@@ -151,7 +156,6 @@ export function AuthProvider({ children }) {
       }
     }
 
-    // Si Supabase requiere confirmación de email, data.session será null.
     if (!data.session) {
       throw new Error('Supabase requiere confirmación de email. Por favor, desactiva "Confirm Email" en la configuración de Authentication de tu panel de Supabase para poder usar emails inventados.');
     }
@@ -164,14 +168,17 @@ export function AuthProvider({ children }) {
     setProfile(newProfile);
     localStorage.setItem('planit_profile', JSON.stringify(newProfile));
 
+    if (!profile.isDemo && user) {
+      const { error } = await supabase.auth.updateUser({
+        data: updates
+      });
+      if (error) console.error('Error updating user metadata:', error);
+    }
+
     if (updates.grado || updates.curso) {
       const g = updates.grado || profile.grado;
       const c = updates.curso || profile.curso;
       await loadExams(g, c, newProfile.isDemo);
-    }
-
-    if (!newProfile.isDemo && profile.id) {
-      await supabase.from('profiles').upsert({ id: profile.id, ...updates });
     }
   }
 
@@ -195,14 +202,12 @@ export function AuthProvider({ children }) {
     if (!profile?.isDemo && user && user.id !== 'demo-user') {
       const { error } = await supabase.from('examenes_oficiales').insert({
         ...examData,
-        user_id: user.id,
         grado: profile?.grado,
         curso: profile?.curso
       });
       if (error) {
         console.error('Error saving exam to Supabase:', error);
-        alert('Error al guardar la tarea en la base de datos: ' + (error.message || 'Error desconocido') + '. Por favor, comprueba las políticas RLS en Supabase.');
-        // Remove from local state if it failed to save to prevent false success feedback
+        alert('Error al guardar la tarea en la base de datos: ' + (error.message || 'Error desconocido') + '.');
         setExams(prev => prev.filter(ex => ex.id !== newExam.id));
       }
     }
