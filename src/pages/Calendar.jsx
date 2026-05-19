@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { CalendarDays, List, ChevronLeft, ChevronRight, Plus, Clock, CheckCircle, X, ExternalLink, MessageCircle, Trash2 } from 'lucide-react';
 import Logo from '../components/Logo';
 import { useAuth } from '../context/AuthContext';
