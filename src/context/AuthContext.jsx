@@ -81,7 +81,12 @@ export function AuthProvider({ children }) {
 
       // 2. Load custom exams from Supabase
       let customExams = [];
-      if (!isDemo && user?.id && user.id !== 'demo-user') {
+      if (isDemo || profile?.isDemo || user?.id === 'demo-user') {
+        const storedExams = localStorage.getItem('planit_demo_exams');
+        if (storedExams) {
+          customExams = JSON.parse(storedExams);
+        }
+      } else if (user?.id) {
         const { data } = await supabase
           .from('examenes_oficiales')
           .select('*')
@@ -143,7 +148,14 @@ export function AuthProvider({ children }) {
       curso: profile?.curso,
     };
 
-    setExams(prev => [...prev, newExam]);
+    setExams(prev => {
+      const updated = [...prev, newExam];
+      if (profile?.isDemo || user?.id === 'demo-user') {
+        const custom = updated.filter(ex => !ex.isOfficial);
+        localStorage.setItem('planit_demo_exams', JSON.stringify(custom));
+      }
+      return updated;
+    });
 
     if (!profile?.isDemo && user && user.id !== 'demo-user') {
       const { error } = await supabase.from('examenes_oficiales').insert({
@@ -157,7 +169,14 @@ export function AuthProvider({ children }) {
   }
 
   async function removeExam(examId) {
-    setExams(prev => prev.filter(ex => ex.id !== examId));
+    setExams(prev => {
+      const updated = prev.filter(ex => ex.id !== examId);
+      if (profile?.isDemo || user?.id === 'demo-user') {
+        const custom = updated.filter(ex => !ex.isOfficial);
+        localStorage.setItem('planit_demo_exams', JSON.stringify(custom));
+      }
+      return updated;
+    });
     
     if (!profile?.isDemo && user && user.id !== 'demo-user') {
       // Intenta borrar de Supabase (solo si es un ID válido de Supabase, no los 'official-...' o Date.now())
